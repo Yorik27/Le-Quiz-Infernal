@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color"content="black">
+    <meta name="description" content="Quiz difficile.">
     <title>Quiz Infernal</title>
- <!--  <link rel="shortcut icon" href="./assets/icons/icon-128x128.png"> --> 
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+ <!--  <link rel="manifest" href="manifest.webmanifest"> -->
     <link rel="stylesheet" href="./main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@700&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin = "anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@700&family=Cormorant+Garamond:ital@1&display=swap"  crossorigin = "anonymous">
+    <!-- rel="stylesheet"> -->
 </head>  
     
 
@@ -31,7 +36,7 @@
 
 
  
-   <p> Bienvenue dans le quiz infernal.<br> Arriveras-tu à faire un score honorable ?</p>
+   <p> Bienvenue dans le quiz infernal.<br> Arriverez-vous à faire un score honorable&nbsp?</p>
    <button>Jouer</button>
 
 </div>
@@ -41,12 +46,19 @@
 
 
 <div class = "question-screen">
-   <h3><h3>
-   <ul>
-
-   </ul>   
-<h5 id= "bonPasBon"></h5>
-<p><span id="bonnesReponses"></span> Bonnes réponses sur : </p>
+   <div>
+      <h4 id="resultat"></h4>
+      <h5 id= "bonPasBon"></h5>
+   </div>
+   <h3></h3>
+      <div>
+         <ul>
+         </ul>   
+      </div>
+<!-- 
+   <h4 id="resultat"></h4>
+   <h5 id= "bonPasBon"></h5>
+-->   
 <p id = "compteur"></p>
 </div>
 
@@ -54,8 +66,11 @@
 <!--––––––––––– Ecran de fin ––––––––––––––––––– -->
 
 <div class = "end-screen">
+   <p class = "titreEnd">Le Quiz </p>
+   <p class = "titreEnd">Infernal </p>
 
-   <h1> Voici ton score : <span></span></h1>
+   <h1> Voici votre score : <span></span></h1>
+   <p><span id="bonnesReponses"></span> Bonnes réponses sur <span id="nbQuestions"></span> </p>
    <p class="score"></p>
    <button>Rejouer</button>
 </div>
